@@ -21,7 +21,7 @@ function PageTransitions() {
       sectBtns.forEach((btn) => {
         btn.classList.remove("active");
       });
-      e.target.classList.add("active");
+      e.target.classList.add("active-btn");
 
       //hiding the other section
       sections.forEach((section) => {

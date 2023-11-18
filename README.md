@@ -1,7 +1,7 @@
 # My Portfolio Website
 
-Welcome to the repository for my personal portfolio website! This website showcases my projects, skills, and experience in the field of [your field/industry].
-
+Welcome to the repository for my personal portfolio website! This website showcases my projects, skills, and experience in the field of website development.
+![portfolio website](https://github.com/nitish-niraj/portfolio.github.io/blob/main/Screenshot%202023-07-02%20105448.png)
 ## Table of Contents
 
 - [Description](#description)

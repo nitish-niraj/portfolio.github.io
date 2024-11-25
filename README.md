@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio website! This website showcases my projects, skills, and experience in the field of website development and beyond.
 
-![Portfolio Website Screenshot](https://github.com/nitish-niraj/portfolio.github.io/blob/main/Screenshot%202023-07-02%20105448.png)
+![Portfolio Website Screenshot](https://github.com/nitish-niraj/portfolio.github.io/blob/main/image.png)
 
 ## Table of Contents
 

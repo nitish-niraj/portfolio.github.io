@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nitish niraj</title>
+    <title>Nitish Niraj - Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Nitish Kumar's personal portfolio website showcasing projects, blogs, and contact information.">
+    <meta name="keywords" content="Nitish Kumar, Portfolio, Web Developer, Programmer, Projects, Blogs, Contact">
+    <meta name="author" content="Nitish Kumar">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nitish Kumar - Portfolio">
+    <meta property="og:description" content="Explore Nitish Kumar's projects and blogs.">
+    <meta property="og:image" content="images/hero.jpg">
+    <meta property="og:url" content="https://niruportfolio.netlify.app/">
+    <meta property="og:type" content="website">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css">
 
-    <!-- google font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-    
-    <!-- font awsome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" href="./favicon_io/favicon.ico">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon_io/favicon.ico">
 
-    <!-- ChatGPT -->
-             <script>
-            window.embeddedChatbotConfig = {
-            chatbotId: "YKYBQYHpdRWPe2R3Zz2w5",
-            domain: "www.chatbase.co"
-            }
-            </script>
-            <script
-            src="https://www.chatbase.co/embed.min.js"
-            chatbotId="YKYBQYHpdRWPe2R3Zz2w5"
-            domain="www.chatbase.co"
-            defer>
-            </script>
+    <!-- Chipp Chat Widget -->
+    <script>
+        window.CHIPP_APP_URL = "https://nirubotvirtualassistant-25842.chipp.ai";
+        window.CHIPP_APP_ID = 25842;
+    </script>
 
+    <link rel="stylesheet" href="https://storage.googleapis.com/chipp-chat-widget-assets/build/bundle.css" />
 
-    
+    <script defer src="https://storage.googleapis.com/chipp-chat-widget-assets/build/bundle.js"></script>
+
+    <script src="https://www.chatbase.co/embed.min.js" defer></script>
+
+    <!-- Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Rellax.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <!-- Place these in the <head> section -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 </head>
-
-
 
 <body class="main-content">
 
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
-<!-- this is the homepage -->
+    <!-- Background Particles -->
+    <div id="particles-js"></div>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Main Content -->
     <header class="section sec1 header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
+        <div class="header-content" data-rellax-speed="-5">
+            <div class="left-header" data-aos="fade-right">
                 <div class="h-shape"></div>
-                    <div class="image"> 
-                        <img src="images/hero.jpg" alt="">
-                    </div>       
+                <div class="image">
+                    <img src="images/hero.jpg" alt="Nitish Kumar">
+                </div>
             </div>
-
-
-
-            <div class="right-header">
-                <h1 class="name">Hi, I'm <span>NITISH KUMAR</span>(Niraj), a passionate programmer & web developer.</h1>
-                <p>I am a highly motivated and skilled frontend developer with a strong foundation in various programming languages and technologies. I am passionate about technology and development, and I am always looking for new challenges and opportunities to learn and grow. I am eager to contribute my skills and knowledge to innovative projects that make a meaningful impact.
-                </p>
+            <div class="right-header" data-aos="fade-left">
+                <h1 class="name">Hi, I'm <span class="typed-text"></span></h1>
+                <p>I am a highly motivated and skilled frontend developer with a strong foundation in various
+                    programming languages and technologies. I am passionate about technology and development, and I am
+                    always looking for new challenges and opportunities to learn and grow. I am eager to contribute my
+                    skills and knowledge to innovative projects that make a meaningful impact.</p>
                 <div class="btn-con">
-                    <a href="https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view?usp=drive_link" class="main-btn" target="_blank">
+                    <a href="https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view?usp=drive_link"
+                        class="main-btn" target="_blank">
                         <span class="btn-text">Download Resume</span>
                         <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
                     </a>
@@ -71,111 +102,100 @@
         </div>
     </header>
 
-
-<!-- here is the about section -->
-
+    <!-- About Section -->
     <main>
         <section class="section sec2" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my start</span></h2>
+            <div class="main-title" data-aos="fade-up">
+                <h2>About <span>me</span><span class="bg-text">my story</span></h2>
             </div>
-            <div class="about-container">
+            <div class="about-container" data-aos="fade-up">
                 <div class="left-about">
-                    <h4>information about me</h4>
-                    <p>I'm a B. Voc.in computer Application student (BHU) with a strong passion for programming and problem-solving.
-                        I have a solid foundation in various programming languages like Java and Python,
-                        and I'm constantly exploring web technologies & app development to expand my knowledge.
-                        I believe in the power of technology to create innovative solutions and improve lives. 
-                        In my free time, I enjoy participating in coding competitions and making projects.
-                    </p>
+                    <h4>Information About Me</h4>
+                    <p>I'm a B. Voc.in Computer Application student (BHU) with a strong passion for programming and
+                        problem-solving. I have a solid foundation in various programming languages like Java and
+                        Python, and I'm constantly exploring web technologies & app development to expand my knowledge.
+                        I believe in the power of technology to create innovative solutions and improve lives. In my
+                        free time, I enjoy participating in coding competitions and making projects.</p>
                     <div class="btn-con">
-                        <a href="https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view?usp=drive_link" class="main-btn" target="_blank">
+                        <a href="https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view?usp=drive_link"
+                            class="main-btn" target="_blank">
                             <span class="btn-text">Download Resume</span>
                             <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
                         </a>
                     </div>
-
-
                 </div>
-
-
                 <div class="right-about">
-                    <div class="about-item">
+                    <div class="about-item" data-aos="zoom-in">
                         <div class="abt-text">
-                            <p class="large-text">13+</p>
-                            <p class="small-text">Project <br>Completed</p>
+                            <p class="large-text">20+</p>
+                            <p class="small-text">Projects <br>Completed</p>
                         </div>
                     </div>
-
-                    <div class="about-item">
+                    <div class="about-item" data-aos="zoom-in" data-aos-delay="100">
                         <div class="abt-text">
-                            <p class="large-text">2+</p>
-                            <p class="small-text">internship <br>Completed</p>
+                            <p class="large-text">3+</p>
+                            <p class="small-text">Internships <br>Completed</p>
                         </div>
                     </div>
-
-                    <div class="about-item">
+                    <div class="about-item" data-aos="zoom-in" data-aos-delay="200">
                         <div class="abt-text">
                             <p class="large-text">10+</p>
-                            <p class="small-text">blog <br>Posted</p>
+                            <p class="small-text">Blogs <br>Posted</p>
                         </div>
                     </div>
-                
-                
                 </div>
             </div>
 
-
-            <div class="about-stats">
-                <h4 class="stat-title">My skills</h4>
+            <!-- Skills Section -->
+            <div class="about-stats" data-aos="fade-up">
+                <h4 class="stat-title">My Skills</h4>
                 <div class="progress-bars">
                     <div class="progress-bar">
                         <p class="prog-title">HTML 5</p>
                         <div class="progress-con">
                             <p class="prog-text">90%</p>
                             <div class="progress">
-                                <span class="html"></span>
+                                <span class="html" data-progress="90%"></span>
                             </div>
                         </div>
                     </div>
-                
 
                     <div class="progress-bar">
-                        <p class="prog-title">css</p>
+                        <p class="prog-title">CSS</p>
                         <div class="progress-con">
                             <p class="prog-text">80%</p>
                             <div class="progress">
-                                <span class="css"></span>
+                                <span class="css" data-progress="80%"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
+                        <p class="prog-title">JavaScript</p>
                         <div class="progress-con">
                             <p class="prog-text">60%</p>
                             <div class="progress">
-                                <span class="js"></span>
+                                <span class="js" data-progress="60%"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="progress-bar">
-                        <p class="prog-title">my sql</p>
+                        <p class="prog-title">MySQL</p>
                         <div class="progress-con">
                             <p class="prog-text">50%</p>
                             <div class="progress">
-                                <span class="sql"></span>
+                                <span class="sql" data-progress="50%"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="progress-bar">
-                        <p class="prog-title">java</p>
+                        <p class="prog-title">Java</p>
                         <div class="progress-con">
                             <p class="prog-text">75%</p>
                             <div class="progress">
-                                <span class="java"></span>
+                                <span class="java" data-progress="75%"></span>
                             </div>
                         </div>
                     </div>
@@ -185,178 +205,201 @@
                         <div class="progress-con">
                             <p class="prog-text">55%</p>
                             <div class="progress">
-                                <span class="python"></span>
+                                <span class="python" data-progress="55%"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="progress-bar">
-                        <p class="prog-title">Iot/Robotics</p>
+                        <p class="prog-title">IoT/Robotics</p>
                         <div class="progress-con">
                             <p class="prog-text">65%</p>
                             <div class="progress">
-                                <span class="iot"></span>
+                                <span class="iot" data-progress="65%"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="progress-bar">
-                        <p class="prog-title">cloud computing (AWS)</p>
+                        <p class="prog-title">Cloud Computing (AWS)</p>
                         <div class="progress-con">
                             <p class="prog-text">55%</p>
                             <div class="progress">
-                                <span class="cloud"></span>
+                                <span class="cloud" data-progress="55%"></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="progress-bar">
-                        <p class="prog-title">react js</p>
+                        <p class="prog-title">React JS</p>
                         <div class="progress-con">
                             <p class="prog-text">30%</p>
                             <div class="progress">
-                                <span class="react"></span>
+                                <span class="react" data-progress="30%"></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <!-- timeline -->
-            <h4 class="stat-title">My Timeline</h4>
+            <!-- Timeline Section -->
+            <h4 class="stat-title" data-aos="fade-up">My Timeline</h4>
             <div class="timeline">
-
-                <!-- this is for the internship -->
-                <div class="timeline-item">
+                <!-- Internship Timeline Items -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="tl-icon">
                         <i class="fa-solid fa-briefcase"></i>
                     </div>
-                    <p class="tl-duration">(09 November 2023 - 10 january 2024</p>
-                    <h5>Flutter Application Development <span> - Dhanwantri Charity Foundation</span></h5>
-                    <p>Developed Flutter applications for Dhanwantri Charity Foundation, enhancing their outreach and support efforts during a two-month internship. 
-                        Contributed to meaningful projects aligning with the foundation's mission, refining skills in mobile app development for social impact.</p>
+                    <p class="tl-duration">(19 July 2024 - Present)</p>
+                    <h5>Technical Specialist <span>- FRUITFUSION ADVISORY LLP (ZenLearn.ai)</span></h5>
+                    <p>Led an open-source project using the Big Five Personality Traits model, deployed on AWS for
+                        scalable assessments. Engineered a RAG system for a doubt-solving chatbot with Meta's Llama 3.1,
+                        cutting query resolution time by 40%. Created and customized over 5 specialized GPT models for
+                        various internal applications, enhancing functionality and efficiency across different projects.
+                        Optimized Moodle's UI for a more intuitive learning experience, leading to a 25% increase in
+                        user interaction with the platform.</p>
                 </div>
 
-                
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="tl-icon">
                         <i class="fa-solid fa-briefcase"></i>
                     </div>
-                    <p class="tl-duration">10 june 2023 - 10 july 2023</p>
-                    <h5>Web Developer <span> - Bharat Intern</span></h5>
-                    <p>During my internship at Bharat Intern, I gained valuable experience as a frontend developer, working on real-world projects and honing my skills in web development and design. It was an enriching opportunity that allowed me to contribute to the development of innovative and user-friendly websites.</p>
+                    <p class="tl-duration">(09 November 2023 - 10 January 2024)</p>
+                    <h5>Flutter Application Development <span>- Dhanwantri Charity Foundation</span></h5>
+                    <p>Developed Flutter applications for Dhanwantri Charity Foundation, enhancing their outreach and
+                        support efforts during a two-month internship. Contributed to meaningful projects aligning with
+                        the foundation's mission, refining skills in mobile app development for social impact.</p>
                 </div>
 
-                <!-- this is for the fulltime course  -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">10 June 2023 - 10 July 2023</p>
+                    <h5>Web Developer <span>- Bharat Intern</span></h5>
+                    <p>During my internship at Bharat Intern, I gained valuable experience as a frontend developer,
+                        working on real-world projects and honing my skills in web development and design. It was an
+                        enriching opportunity that allowed me to contribute to the development of innovative and
+                        user-friendly websites.</p>
+                </div>
 
-                <div class="timeline-item">
+                <!-- Education Timeline Items -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="tl-icon">
                         <i class="fa-solid fa-user-graduate"></i>
                     </div>
-                    <p class="tl-duration">2021 - prsent</p>
-                    <h5>B. Voc. in Computer Application<span> - Banaras hindu university</span></h5>
-                    <p>As a B.Voc. student in Computer Application at BHU, I am immersed in a comprehensive program that equips me with the necessary knowledge and skills in the field of computer application. BHU's rigorous curriculum has been instrumental in shaping my expertise and preparing me for real-world challenges in the tech industry.</p>                   
+                    <p class="tl-duration">2021 - 2024</p>
+                    <h5>B. Voc. in Computer Application <span>- Banaras Hindu University</span></h5>
+                    <p>As a B.Voc. student in Computer Application at BHU, I am immersed in a comprehensive program that
+                        equips me with the necessary knowledge and skills in the field of computer application. BHU's
+                        rigorous curriculum has been instrumental in shaping my expertise and preparing me for
+                        real-world challenges in the tech industry.</p>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
                     <div class="tl-icon">
                         <i class="fa-solid fa-school"></i>
                     </div>
-                    <p class="tl-duration">june 2019 - march 2021</p>
-                    <h5>Intermediate (12th)</span></h5>
-                    <p>I completed my 12th-grade education specializing in PCM under the Bihar Board, achieving a commendable total score of 378 out of 500 marks. 
-                        This milestone reflects my dedication and commitment to academic excellence, showcasing my passion for learning and my relentless pursuit of knowledge.</p>
+                    <p class="tl-duration"> 2019 - 2021</p>
+                    <h5>Intermediate (12th)</h5>
+                    <p>I completed my 12th-grade education specializing in PCM under the Bihar Board, achieving a
+                        commendable total score of 378 out of 500 marks. This milestone reflects my dedication and
+                        commitment to academic excellence, showcasing my passion for learning and my relentless pursuit
+                        of knowledge.</p>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
                     <div class="tl-icon">
                         <i class="fa-solid fa-school-flag"></i>
                     </div>
-                    <p class="tl-duration">march 2018 - march 2019</p>
-                    <h5>Matriculation (10th)</span></h5>
-                    <p>In the academic year 2018-2019, I successfully completed my 10th-grade education under the esteemed Bihar Board. 
-                        It was a pivotal year in my academic journey, and I'm proud to have secured a commendable score of 378 out of a possible 500 marks. 
-                        This achievement reflects my dedication to my studies and my commitment to achieving excellence. 
-                        It marks a significant milestone in my educational path, and I look forward to building upon this strong foundation in my future endeavors.</p>
+                    <p class="tl-duration"> 2018 - 2019</p>
+                    <h5>Matriculation (10th)</h5>
+                    <p>In the academic year 2018-2019, I successfully completed my 10th-grade education under the
+                        esteemed Bihar Board. It was a pivotal year in my academic journey, and I'm proud to have
+                        secured a commendable score of 378 out of a possible 500 marks. This achievement reflects my
+                        dedication to my studies and my commitment to achieving excellence. It marks a significant
+                        milestone in my educational path, and I look forward to building upon this strong foundation in
+                        my future endeavors.</p>
                 </div>
 
-                <!-- this is for the certifications -->
-
-                <div class="timeline-item">
+                <!-- Certification Timeline Items -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
                     <div class="tl-icon">
                         <i class="fa-solid fa-certificate"></i>
                     </div>
-                    <p class="tl-duration">march 2023 - april 2023</p>
-                    <h5>digital marketing<span> - google</span></h5>
-                    <p>Certified in Google Digital Garage, I have gained expertise in various aspects of digital marketing including SEO, search advertising, social media, and analytics. Equipped with industry-relevant skills, I am ready to drive impactful marketing campaigns.</p>
+                    <p class="tl-duration">March 2023 - April 2023</p>
+                    <h5>Digital Marketing <span>- Google</span></h5>
+                    <p>Certified in Google Digital Garage, I have gained expertise in various aspects of digital
+                        marketing including SEO, search advertising, social media, and analytics. Equipped with
+                        industry-relevant skills, I am ready to drive impactful marketing campaigns.</p>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
                     <div class="tl-icon">
                         <i class="fa-solid fa-certificate"></i>
                     </div>
-                    <p class="tl-duration">may 2022 - august 2022</p>
-                    <h5>Certificate Course in Yogic Practices for Better Living<span> - Banaras Hindu University</span></h5>
-                    <p>The Certificate Course in Yogic Practices for Better Living offered by Banaras Hindu University has provided me with a comprehensive understanding of yogic practices and their positive impact on overall well-being. Through this course, I have developed valuable skills in mindfulness, meditation, and stress management, enhancing my personal and professional life.</p>
+                    <p class="tl-duration">May 2022 - August 2022</p>
+                    <h5>Certificate Course in Yogic Practices for Better Living <span>- Banaras Hindu University</span>
+                    </h5>
+                    <p>The Certificate Course in Yogic Practices for Better Living offered by Banaras Hindu University
+                        has provided me with a comprehensive understanding of yogic practices and their positive impact
+                        on overall well-being. Through this course, I have developed valuable skills in mindfulness,
+                        meditation, and stress management, enhancing my personal and professional life.</p>
                 </div>
 
-                <div class="timeline-item">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="900">
                     <div class="tl-icon">
                         <i class="fa-solid fa-certificate"></i>
                     </div>
-                    <p class="tl-duration">june 2022 - January 2023</p>
-                    <h5>TCS iON Career Edge - Young Professional<span> - TCS iON</span></h5>
-                    <p>I have successfully completed the TCS iON Career Edge - Young Professional course, gaining valuable skills in communication, problem-solving, and digital proficiency. This program has equipped me with industry-relevant knowledge and enhanced my employability for a successful career.</p>
+                    <p class="tl-duration">June 2022 - January 2023</p>
+                    <h5>TCS iON Career Edge - Young Professional <span>- TCS iON</span></h5>
+                    <p>I have successfully completed the TCS iON Career Edge - Young Professional course, gaining
+                        valuable skills in communication, problem-solving, and digital proficiency. This program has
+                        equipped me with industry-relevant knowledge and enhanced my employability for a successful
+                        career.</p>
                 </div>
-
-
-
-
-
             </div>
         </section>
 
 
-
-<!-- this is for the portfolio section -->
-
+        <!-- Portfolio Section -->
         <section class="section sec3" id="portfolio">
-            <div class="main-title">
-                <h2>my <span>work </span><span class="bg-text">projects</span></h2>
+            <div class="main-title" data-aos="fade-up">
+                <h2>my <span>work</span><span class="bg-text">projects</span></h2>
             </div>
-            <p class="port-text">Explore my diverse range of projects, ranging from web development to IoT solutions, showcasing my ability to tackle versatile challenges.
-                <br>(To visit my projects on a laptop, simply hover your cursor over the project card. For mobile and tablet users, just click on the project card to explore further.)
+            <p class="port-text" data-aos="fade-up">Explore my diverse range of projects, ranging from web development
+                to IoT solutions, showcasing my ability to tackle versatile challenges.
+                <br>(To visit my projects on a laptop, simply hover your cursor over the project card. For mobile and
+                tablet users, just click on the project card to explore further.)
             </p>
             <div class="portfolios">
-
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="image">
-                        <img src="images/project1.jpg" alt="">
+                        <img src="images/project1.png" alt="Portfolio Website">
                         <p>Explore my portfolio to witness the fusion of creativity and technology in action.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                             
                             <a href="https://github.com/nitish-niraj/portfolio.github.io" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-portfoliowebsite-uxdesign-activity-7111315204428226560-SlZ2?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-portfoliowebsite-uxdesign-activity-7111315204428226560-SlZ2"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
-
                         </div>
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="image">
-                        <img src="images/project2.jpg" alt="">
-                        <p>I've crafted a modern and intuitive frontend for an educational institution's website, delivering an enriched online experience with dynamic notice boards and essential information using HTML, CSS, and JavaScript.</p>
+                        <img src="images/project2.png" alt="Educational Institution Website">
+                        <p>I've crafted a modern and intuitive frontend for an educational institution's website,
+                            delivering an enriched online experience with dynamic notice boards and essential
+                            information using HTML, CSS, and JavaScript.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
@@ -364,23 +407,171 @@
                             <a href="https://nirucoaching.netlify.app/" target="_blank" class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
-
                             <a href="https://github.com/nitish-niraj/niru-coaching" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-html5-css3-activity-7063528863758266368-VdjB?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-html5-css3-activity-7063528863758266368-VdjB"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="image">
-                        <img src="images/project6.jpg" alt="">
-                        <p> a complete Frontend Clone of Netflix! 🎥🍿</p>
+                        <img src="images/project15.png" alt="16 Personalities Web App">
+                        <p>An interactive web application designed based on scientific principles to categorize users
+                            into 16 personality types. Provides detailed reports based on user responses, offering deep
+                            insights into their personalities.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://16presonalities.netlify.app/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/nitish-niraj/16presonalities.git" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="image">
+                        <img src="images/project16.png" alt="Big Five Personality Assessment">
+                        <p>A comprehensive personality assessment tool that provides users with scores in the Big Five
+                            personality traits (Openness, Conscientiousness, Extraversion, Agreeableness, and
+                            Neuroticism). Presents users' personality profiles clearly and understandably through data
+                            visualization.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://personality.zenlearn.ai/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/nitish-niraj/bigfive" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="image">
+                        <img src="images/project17.jpg" alt="Real-time Weather App">
+                        <p>A real-time weather app that delivers accurate weather updates based on the user's current
+                            location. Features an interactive user interface displaying information such as temperature,
+                            humidity, atmospheric pressure, and weather forecasts.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://drive.google.com/file/d/19dLqA1rOdtNB9nJ0kwsokYoZaqGQ-cqP/view?usp=sharing"
+                                target="_blank" class="icon">
+                                <i class="fa-brands fa-google-play"></i>
+                            </a>
+                            <a href="https://github.com/nitish-niraj/naushamvai" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/niru-nny_flutter-mobileappdevelopment-weatherapp-activity-7214564230929256450-6jhc"
+                                target="_blank" class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="image">
+                        <img src="images/project18.png" alt="Intelligent Chatbot">
+                        <p>An intelligent chatbot developed using Python and Llama 3.1 that follows the
+                            Retrieve-and-Generate (RAG) technique. Retrieves information from external data sources to
+                            provide precise answers to user queries and generates responses in natural language.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://coach.zenlearn.ai/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/nitish-niraj/chatbot" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 7 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="700">
+                    <div class="image">
+                        <img src="images/project19.png" alt="Financial Simulation Tool">
+                        <p>An interactive simulation tool designed to test financial strategies in various market
+                            scenarios. Provides training for users to understand and learn the impact of real-life
+                            financial decisions through different trading conditions.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://simulationzl.netlify.app/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 8 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="800">
+                    <div class="image">
+                        <img src="images/project20.jpg" alt="Localities Finder">
+                        <p>An application that allows users to search for and obtain information about localities around
+                            a specific location. Includes map integration and filtering options, enabling users to
+                            easily find amenities such as restaurants, parks, schools, etc.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/nitish-niraj/location_localities_finder" target="_blank"
+                                class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/niru-nny_python-googlemapsapi-datascience-activity-7217500334644989952-AU9Q"
+                                target="_blank" class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 9 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="900">
+                    <div class="image">
+                        <img src="images/project21.png" alt="PDF Chunking Tool">
+                        <p>A tool that splits PDF documents into three separate extensions, allowing data to be
+                            processed in smaller chunks. Efficiently chunks PDF data for use in Retrieve-and-Generate
+                            (RAG) chatbots, ensuring better data management and response accuracy.</p>
+                    </div>
+                    <div class="hover-item">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="https://github.com/nitish-niraj/chunking" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 10 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="image">
+                        <img src="images/project6.png" alt="Netflix Clone">
+                        <p>A complete Frontend Clone of Netflix!</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
@@ -388,71 +579,70 @@
                             <a href="https://nitish-niraj.github.io/netflix-homepage/" target="_blank" class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
-
                             <a href="https://github.com/nitish-niraj/netflix-homepage" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_frontenddeveloper-netflixclone-webdevelopment-activity-7084089524322017281-5Ki-?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_frontenddeveloper-netflixclone-webdevelopment-activity-7084089524322017281-5Ki-"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Portfolio Item 11 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1100">
                     <div class="image">
-                        <img src="images/project10.jpg" alt="">
-                        <p>Introducing my Temperature Converter: A user-friendly tool that showcases my JavaScript and DOM manipulation skills while making temperature conversions a breeze! 🌡️🚀</p>
+                        <img src="images/project10.png" alt="Temperature Converter">
+                        <p>Introducing my Temperature Converter: A user-friendly tool that showcases my JavaScript and
+                            DOM manipulation skills while making temperature conversions a breeze!</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="https://nitish-niraj.github.io/temperature-converter/" target="_blank" class="icon">
+                            <a href="https://nitish-niraj.github.io/temperature-converter/" target="_blank"
+                                class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
-
-                            <a href="https://github.com/nitish-niraj/temperature-converter" target="_blank" class="icon">
+                            <a href="https://github.com/nitish-niraj/temperature-converter" target="_blank"
+                                class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-temperatureconverter-javascript-activity-7084084488363737088-IO-U?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-temperatureconverter-javascript-activity-7084084488363737088-IO-U"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-<!--                 App Development Project  -->
-
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 12 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1200">
                     <div class="image">
-                        <img src="images/project14.jpg" alt="">
-                        <p>Developed a mobile application using Flutter and Dart that integrates Google’s Gemini 1.5 Pro API for text generation, image recognition, and chatbot interaction.</p>
+                        <img src="images/project14.jpg" alt="Gemini Genius App">
+                        <p>Developed a mobile application using Flutter and Dart that integrates Google’s Gemini 1.5 Pro
+                            API for text generation, image recognition, and chatbot interaction.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="https://drive.google.com/file/d/1xGGzL35BR6Ugcrj1y_tWe46VDTDN3ETf/view?usp=drive_link" target="_blank" class="icon">
+                            <a href="https://drive.google.com/file/d/1xGGzL35BR6Ugcrj1y_tWe46VDTDN3ETf/view?usp=drive_link"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-google-play"></i>
                             </a>
-
                             <a href="https://github.com/nitish-niraj/gemini-genious" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <!-- <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-portfoliowebsite-uxdesign-activity-7111315204428226560-SlZ2?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a> -->
                         </div>
                     </div>
                 </div>
 
-                <div class="portfolio-item">
+                <!-- Portfolio Item 13 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1300">
                     <div class="image">
-                        <img src="images/project11.jpg" alt="">
-                        <p>Get quick BMI insights with the Android BMI Calculator(using JAVA)! Easily input your weight (in kg) and height (ft/inches), and instantly see your BMI category.</p>
+                        <img src="images/project11.jpg" alt="BMI Calculator App">
+                        <p>Get quick BMI insights with the Android BMI Calculator (using Java)! Easily input your weight
+                            (in kg) and height (ft/inches), and instantly see your BMI category.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
@@ -464,59 +654,54 @@
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 14 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1400">
                     <div class="image">
-                        <img src="images/project12.jpg" alt="">
-                        <p>Experience my creativity and skills firsthand through my Flutter-based Portfolio App, showcasing my journey in the Home, About, and Projects sections</p>
+                        <img src="images/project12.jpg" alt="Portfolio App">
+                        <p>Experience my creativity and skills firsthand through my Flutter-based Portfolio App,
+                            showcasing my journey in the Home, About, and Projects sections.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="https://drive.google.com/file/d/1gnYM-KCxjY44-8dGiAZxLPsbkZiSK3RB/view?usp=drive_link" target="_blank" class="icon">
+                            <a href="https://drive.google.com/file/d/1gnYM-KCxjY44-8dGiAZxLPsbkZiSK3RB/view?usp=drive_link"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-google-play"></i>
                             </a>
-
                             <a href="https://github.com/nitish-niraj/portfolio-app-" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <!-- <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-portfoliowebsite-uxdesign-activity-7111315204428226560-SlZ2?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a> -->
                         </div>
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 15 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1500">
                     <div class="image">
-                        <img src="images/project13.jpg" alt="">
-                        <p>A sleek and intuitive to-do app built using Flutter. Seamlessly organize your tasks with customizable categories, priority levels, and due dates.</p>
+                        <img src="images/project13.jpg" alt="To-Do App">
+                        <p>A sleek and intuitive to-do app built using Flutter. Seamlessly organize your tasks with
+                            customizable categories, priority levels, and due dates.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="https://drive.google.com/file/d/13QpZBLpQuANA_vjxWNhsOj-ZLYVhASf6/view?usp=sharing" target="_blank" class="icon">
+                            <a href="https://drive.google.com/file/d/13QpZBLpQuANA_vjxWNhsOj-ZLYVhASf6/view?usp=sharing"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-google-play"></i>
                             </a>
-
                             <a href="https://github.com/nitish-niraj/To-Do-app-flutter" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <!-- <a href="https://www.linkedin.com/posts/niru-nny_webdevelopment-portfoliowebsite-uxdesign-activity-7111315204428226560-SlZ2?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a> -->
                         </div>
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 16 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1600">
                     <div class="image">
-                        <img src="images/project3.jpg" alt="">
-                        <p>Created a dynamic blogging website using WordPress, Where I publish and share my content seamlessly.</p>
+                        <img src="images/project3.png" alt="Blogging Website">
+                        <p>Created a dynamic blogging website using WordPress, where I publish and share my content
+                            seamlessly.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
@@ -528,11 +713,12 @@
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 17 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1700">
                     <div class="image">
-                        <img src="images/project4.jpg" alt="">
-                        <p>A captivating login page where a mischievous monkey tracks your typing and playfully hides its eyes as you start typing password.</p>
+                        <img src="images/project4.png" alt="Monkey Login Page">
+                        <p>A captivating login page where a mischievous monkey tracks your typing and playfully hides
+                            its eyes as you start typing your password.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
@@ -540,368 +726,420 @@
                             <a href="https://nitish-niraj.github.io/monkey-login/" target="_blank" class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
-
                             <a href="https://github.com/nitish-niraj/monkey-login" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_userexperience-ui-security-activity-7081178522626473984-02mk?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_userexperience-ui-security-activity-7081178522626473984-02mk"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 18 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1800">
                     <div class="image">
-                        <img src="images/project5.jpg" alt="">
-                        <p>A Smart Distance Monitor powered by IoT, featuring an ultrasonic sensor, LCD display, LED lights, and a buzzer.</p>
+                        <img src="images/project5.png" alt="Smart Distance Monitor">
+                        <p>A Smart Distance Monitor powered by IoT, featuring an ultrasonic sensor, LCD display, LED
+                            lights, and a buzzer.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="https://www.tinkercad.com/things/3hvWlk3bs0y?sharecode=Ca6Y2mo0S8LZTdqdMXCuCRINjLZ9OSKIJRlVO9x0AcA" target="_blank" class="icon">
+                            <a href="https://www.tinkercad.com/things/3hvWlk3bs0y" target="_blank" class="icon">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
-
-                            <a href="https://drive.google.com/drive/folders/1fkpV8igqcaj6w5oP2u4b-bP8Q5M-w6e_" target="_blank" class="icon">
+                            <a href="https://drive.google.com/drive/folders/1fkpV8igqcaj6w5oP2u4b-bP8Q5M-w6e_"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-google-drive"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_arduino-ultrasonicsensor-buzzer-activity-7056119726279655424-trfx?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_arduino-ultrasonicsensor-buzzer-activity-7056119726279655424-trfx"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
-
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 19 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="1900">
                     <div class="image">
-                        <img src="images/project7.jpg" alt="">
-                        <p>an Analog Clock developed using Java, showcasing precise timekeeping with a classic visual representation.</p>
+                        <img src="images/project7.png" alt="Analog Clock in Java">
+                        <p>An Analog Clock developed using Java, showcasing precise timekeeping with a classic visual
+                            representation.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <!-- <a href="#" target="_blank" class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </a> -->
-
                             <a href="https://github.com/nitish-niraj/analog-clock-java" target="_blank" class="icon">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-
-                            <!-- <a href="#" target="_blank" class="icon">
-                                <i class="fa-solid fa-user-tie"></i>
-                            </a> -->
-
                         </div>
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 20 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="2000">
                     <div class="image">
-                        <img src="images/project8.jpg" alt="">
-                        <p>Created and presented a comprehensive healthcare business plan addressing societal needs, including market research, go-to-market strategy, and collaboration with a team.</p>
+                        <img src="images/project8.png" alt="Healthcare Business Plan">
+                        <p>Created and presented a comprehensive healthcare business plan addressing societal needs,
+                            including market research, go-to-market strategy, and collaboration with a team.</p>
                     </div>
                     <div class="hover-item">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="https://docs.google.com/presentation/d/18rHJyIM4On0qY-RZnCru2fi4qFIycY51/edit?usp=drive_link&ouid=108149415968033438870&rtpof=true&sd=true" target="_blank" class="icon">
+                            <a href="https://docs.google.com/presentation/d/18rHJyIM4On0qY-RZnCru2fi4qFIycY51"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-google-drive"></i>
                             </a>
-
-                            <a href="https://www.linkedin.com/posts/niru-nny_innovation-enterpreneurship-healthcare-activity-7051837860387164161-Kokh?utm_source=share&utm_medium=member_desktop" target="_blank" class="icon">
+                            <a href="https://www.linkedin.com/posts/niru-nny_innovation-enterpreneurship-healthcare-activity-7051837860387164161-Kokh"
+                                target="_blank" class="icon">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
-
-                            <!-- <a href="#" target="_blank" class="icon">
-                                <i class="fa-solid fa-user-tie"></i>
-                            </a> -->
                         </div>
                     </div>
                 </div>
 
-
-                <div class="portfolio-item">
+                <!-- Portfolio Item 21 -->
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="2100">
                     <div class="image">
-                        <img src="images/project9.jpg" alt="">
-                        <p>Designed an efficient cold supply chain business model to ensure optimal storage and transportation of temperature-sensitive goods.</p>
+                        <img src="images/project9.jpg" alt="Cold Supply Chain Model">
+                        <p>Designed an efficient cold supply chain business model to ensure optimal storage and
+                            transportation of temperature-sensitive goods.</p>
                     </div>
-                    <!-- <div class="hover-item">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" target="_blank" class="icon">
-                                <i class="fa-solid fa-newspaper"></i>
-                            </a> -->
-
-                            <!-- <a href="#" target="_blank" class="icon">
-                                <i class="fa-solid fa-house"></i>
-                            </a>
-
-                            <a href="#" target="_blank" class="icon">
-                                <i class="fa-solid fa-user-tie"></i>
-                            </a> -->
-
-
-                        <!-- </div>
-                    </div> -->
                 </div>
-
-
             </div>
         </section>
 
 
-
-<!-- this is the bloging section -->
-
+        <!-- Blogs Section -->
         <section class="section sec4" id="blogs">
             <div class="blogs-content">
-                <div class="main-title">
+                <div class="main-title" data-aos="fade-up">
                     <h2>my <span>blogs</span><span class="bg-text">my blogs</span></h2>
                     <p>To read in more detail, click on the headline.</p>
                 </div>
                 <div class="blogs">
-                    <div class="blog">
-                        <img src="images/blog1.jpg" alt="">
+                    <!-- Blog Item 1 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/blog1.jpg" alt="Demystifying Artificial Intelligence">
                         <div class="blog-text">
-                            <a href="https://www.linkedin.com/pulse/demystifying-artificial-intelligence-understanding-basics-kumar" target="_blank"><h4>Demystifying Artificial Intelligence: Understanding the Basics and Applications</h4></a>
-                            <p>Artificial Intelligence (AI) has rapidly become a transformative force in various industries, revolutionizing the way we live, work, and interact with technology. This article aims to demystify AI by providing a comprehensive understanding 
-                                of its basics and exploring its wide range of applications. We will delve into the fundamental concepts of AI, discuss its key components, and highlight its impact on different sectors. Let's embark on a journey to unravel the mysteries of AI!</p>
+                            <a href="https://www.linkedin.com/pulse/demystifying-artificial-intelligence-understanding-basics-kumar"
+                                target="_blank">
+                                <h4>Demystifying Artificial Intelligence: Understanding the Basics and Applications</h4>
+                            </a>
+                            <p>Artificial Intelligence (AI) has rapidly become a transformative force in various
+                                industries, revolutionizing the way we live, work, and interact with technology. This
+                                article aims to demystify AI by providing a comprehensive understanding
+                                of its basics and exploring its wide range of applications. We will delve into the
+                                fundamental concepts of AI, discuss its key components, and highlight its impact on
+                                different sectors. Let's embark on a journey to unravel the mysteries of AI!</p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog2.jpg" alt="">
+                    <!-- Blog Item 2 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/blog2.png" alt="Artificial Intelligence Ethics">
                         <div class="blog-text">
-                            <a href="https://theniru.blogspot.com/2023/07/the-future-of-work-how-ai-and.html" target="_blank"><h4>Artificial Intelligence Ethics: Navigating the Complexities of Privacy, Bias, and Accountability</h4></a>
-                            <p>Artificial Intelligence (AI) is rapidly transforming various aspects of our lives, offering innovative solutions to complex problems. However, as AI continues to advance, it brings with it a range of ethical challenges that need to be carefully
-                                addressed. In this comprehensive guide, we will explore the intricate landscape of AI ethics, focusing on the complexities surrounding privacy, bias, and accountability.
-                                </p>
+                            <a href="https://theniru.blogspot.com/2023/07/the-future-of-work-how-ai-and.html"
+                                target="_blank">
+                                <h4>Artificial Intelligence Ethics: Navigating the Complexities of Privacy, Bias, and
+                                    Accountability</h4>
+                            </a>
+                            <p>Artificial Intelligence (AI) is rapidly transforming various aspects of our lives,
+                                offering innovative solutions to complex problems. However, as AI continues to advance,
+                                it brings with it a range of ethical challenges that need to be carefully
+                                addressed. In this comprehensive guide, we will explore the intricate landscape of AI
+                                ethics, focusing on the complexities surrounding privacy, bias, and accountability.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog3.jpg" alt="">
+                    <!-- Blog Item 3 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/blog3.png" alt="The Future of Work with AI and Automation">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/04/the-future-of-work-how-ai-and-automation-are-transforming-industries/" target="_blank"><h4>The Future of Work: How AI and Automation are Transforming Industries</h4></a>
-                            <p>The world of work is undergoing rapid changes, driven by the rapid development of Artificial Intelligence (AI) and
-                                automation technologies. These advancements have led to a significant shift in the way businesses operate and the way
-                                people work. In this article, we will explore the impact of AI and automation on various industries, discuss the benefits
-                                and challenges they bring, and examine how workers, businesses, and society can adapt to this evolving landscape.</p>
+                            <a href="https://thenirajblog.wordpress.com/2023/07/04/the-future-of-work-how-ai-and-automation-are-transforming-industries/"
+                                target="_blank">
+                                <h4>The Future of Work: How AI and Automation are Transforming Industries</h4>
+                            </a>
+                            <p>The world of work is undergoing rapid changes, driven by the rapid development of
+                                Artificial Intelligence (AI) and
+                                automation technologies. These advancements have led to a significant shift in the way
+                                businesses operate and the way
+                                people work. In this article, we will explore the impact of AI and automation on various
+                                industries, discuss the benefits
+                                and challenges they bring, and examine how workers, businesses, and society can adapt to
+                                this evolving landscape.</p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog4.jpg" alt="">
+                    <!-- Blog Item 4 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="400">
+                        <img src="images/blog4.png" alt="Unleashing the Power of Blockchain">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/04/unleashing-the-power-of-blockchain-a-comprehensive-guide-to-the-revolutionary-technology/" target="_blank"><h4>Unleashing the Power of Blockchain: A Comprehensive Guide to the Revolutionary Technology</h4></a>
-                            <p>Blockchain technology has emerged as a groundbreaking innovation in recent years, extending its impact well beyond
-                                the realm of cryptocurrency. Originally introduced as the underlying technology for Bitcoin, blockchain has now found
-                                diverse applications across industries, revolutionizing the way we think about security, transparency, and trust. In this
-                                comprehensive guide, we will take a deep dive into the intricacies of blockchain technology, exploring its potential
-                                beyond cryptocurrency and the exciting opportunities it presents across various sectors.</p>
+                            <a href="https://thenirajblog.wordpress.com/2023/07/04/unleashing-the-power-of-blockchain-a-comprehensive-guide-to-the-revolutionary-technology/"
+                                target="_blank">
+                                <h4>Unleashing the Power of Blockchain: A Comprehensive Guide to the Revolutionary
+                                    Technology</h4>
+                            </a>
+                            <p>Blockchain technology has emerged as a groundbreaking innovation in recent years,
+                                extending its impact well beyond
+                                the realm of cryptocurrency. Originally introduced as the underlying technology for
+                                Bitcoin, blockchain has now found
+                                diverse applications across industries, revolutionizing the way we think about security,
+                                transparency, and trust. In this
+                                comprehensive guide, we will take a deep dive into the intricacies of blockchain
+                                technology, exploring its potential
+                                beyond cryptocurrency and the exciting opportunities it presents across various sectors.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog5.jpg" alt="">
+                    <!-- Blog Item 5 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="500">
+                        <img src="images/blog5.png" alt="Exploring Virtual Reality">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/04/exploring-the-immersive-world-of-virtual-reality-unleashing-boundless-possibilities/" target="_blank"><h4>Exploring the Immersive World of Virtual Reality: Unleashing Boundless Possibilities</h4></a>
-                            <p>Virtual Reality (VR) has revolutionized the way we experience digital media and interact with our surroundings. With its
-                                ability to transport users to immersive and interactive digital environments, VR has captured the imagination of
-                                individuals across various industries. In this article, we will delve into the captivating world of virtual reality, exploring
-                                its boundless potential and the transformative impact it has on entertainment, education, training, and more. Get ready
-                                to embark on a journey where reality blends with imagination, unleashing endless possibilities for immersive
+                            <a href="https://thenirajblog.wordpress.com/2023/07/04/exploring-the-immersive-world-of-virtual-reality-unleashing-boundless-possibilities/"
+                                target="_blank">
+                                <h4>Exploring the Immersive World of Virtual Reality: Unleashing Boundless Possibilities
+                                </h4>
+                            </a>
+                            <p>Virtual Reality (VR) has revolutionized the way we experience digital media and interact
+                                with our surroundings. With its
+                                ability to transport users to immersive and interactive digital environments, VR has
+                                captured the imagination of
+                                individuals across various industries. In this article, we will delve into the
+                                captivating world of virtual reality, exploring
+                                its boundless potential and the transformative impact it has on entertainment,
+                                education, training, and more. Get ready
+                                to embark on a journey where reality blends with imagination, unleashing endless
+                                possibilities for immersive
                                 experiences.</p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog6.jpg" alt="">
+                    <!-- Blog Item 6 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="600">
+                        <img src="images/blog6.png" alt="The Future of the Internet: Web 3.0">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/04/the-future-of-the-internet-web-3-0/" target="_blank"><h4>The Future of the Internet: Web 3.0</h4></a>
-                            <p>The internet has come a long way since its inception, evolving from the static Web 1.0 to the interactive Web 2.0. Now,
-                                we stand on the cusp of another transformation with the emergence of Web 3.0. This next generation of the internet
-                                promises decentralization, increased user personalization, and groundbreaking technologies. In this article, we will
-                                explore the history of the World Wide Web, the key aspects of Web 3.0, examples of Web 3.0 technologies and projects,
-                                and the potential impact on businesses. Let's dive in and discover what the future holds for the internet.</p>
+                            <a href="https://thenirajblog.wordpress.com/2023/07/04/the-future-of-the-internet-web-3-0/"
+                                target="_blank">
+                                <h4>The Future of the Internet: Web 3.0</h4>
+                            </a>
+                            <p>The internet has come a long way since its inception, evolving from the static Web 1.0 to
+                                the interactive Web 2.0. Now,
+                                we stand on the cusp of another transformation with the emergence of Web 3.0. This next
+                                generation of the internet
+                                promises decentralization, increased user personalization, and groundbreaking
+                                technologies. In this article, we will
+                                explore the history of the World Wide Web, the key aspects of Web 3.0, examples of Web
+                                3.0 technologies and projects,
+                                and the potential impact on businesses. Let's dive in and discover what the future holds
+                                for the internet.</p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog7.png" alt="">
+                    <!-- Blog Item 7 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="700">
+                        <img src="images/blog7.png" alt="Blockchain and Supply Chain">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/04/the-future-of-the-internet-web-3-0/" target="_blank"><h4>Blockchain and Supply Chain: Increasing Transparency and Efficiency in Global Trade</h4></a>
-                            <p>Blockchain is a distributed ledger technology that has the potential to revolutionize supply chain management. By providing a secure and transparent way 
-                                to track the movement of goods, blockchain can help to improve traceability, efficiency, and trust in global trade.</p>
+                            <a href="https://thenirajblog.wordpress.com/2023/07/04/the-future-of-the-internet-web-3-0/"
+                                target="_blank">
+                                <h4>Blockchain and Supply Chain: Increasing Transparency and Efficiency in Global Trade
+                                </h4>
+                            </a>
+                            <p>Blockchain is a distributed ledger technology that has the potential to revolutionize
+                                supply chain management. By providing a secure and transparent way
+                                to track the movement of goods, blockchain can help to improve traceability, efficiency,
+                                and trust in global trade.</p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog8.png" alt="">
+                    <!-- Blog Item 8 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="800">
+                        <img src="images/blog8.png" alt="Exploring Amazon EC2">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/22/exploring-the-power-of-amazon-ec2-a-comprehensive-guide/" target="_blank"><h4>EXPLORING THE POWER OF AMAZON EC2: A COMPREHENSIVE GUIDE</h4></a>
-                            <p>Amazon EC2, or Elastic Compute Cloud, is a fundamental web service provided by Amazon Web Services (AWS). It provides scalable compute capacity in the cloud, allowing businesses and developers to quickly 
-                                deploy and scale virtual servers. In this comprehensive guide, we’ll delve deeper into the world of Amazon EC2, exploring its key features, benefits, and different use cases.</p>
+                            <a href="https://thenirajblog.wordpress.com/2023/07/22/exploring-the-power-of-amazon-ec2-a-comprehensive-guide/"
+                                target="_blank">
+                                <h4>EXPLORING THE POWER OF AMAZON EC2: A COMPREHENSIVE GUIDE</h4>
+                            </a>
+                            <p>Amazon EC2, or Elastic Compute Cloud, is a fundamental web service provided by Amazon Web
+                                Services (AWS). It provides scalable compute capacity in the cloud, allowing businesses
+                                and developers to quickly
+                                deploy and scale virtual servers. In this comprehensive guide, we’ll delve deeper into
+                                the world of Amazon EC2, exploring its key features, benefits, and different use cases.
+                            </p>
                         </div>
                     </div>
 
-
-                    <div class="blog">
-                        <img src="images/blog9.png" alt="">
+                    <!-- Blog Item 9 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="900">
+                        <img src="images/blog9.png" alt="Quantum Computing">
                         <div class="blog-text">
-                            <a href="https://www.linkedin.com/pulse/quantum-leaps-ahead-unveiling-future-computing-nitish-kumar" target="_blank"><h4>Quantum Leaps Ahead: Unveiling the Future with Quantum Computing</h4></a>
-                            <p>Quantum computing is a rapidly developing field with the potential to revolutionize many aspects of our lives. 
-                                By harnessing the power of quantum mechanics, quantum computers can solve problems that are intractable for classical computers.</p>
+                            <a href="https://www.linkedin.com/pulse/quantum-leaps-ahead-unveiling-future-computing-nitish-kumar"
+                                target="_blank">
+                                <h4>Quantum Leaps Ahead: Unveiling the Future with Quantum Computing</h4>
+                            </a>
+                            <p>Quantum computing is a rapidly developing field with the potential to revolutionize many
+                                aspects of our lives.
+                                By harnessing the power of quantum mechanics, quantum computers can solve problems that
+                                are intractable for classical computers.</p>
                         </div>
                     </div>
 
-                    <div class="blog">
-                        <img src="images/blog10.jpeg" alt="">
+                    <!-- Blog Item 10 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="1000">
+                        <img src="images/blog10.jpeg" alt="The Rise of 5G">
                         <div class="blog-text">
-                            <a href="https://thenirajblog.wordpress.com/2023/07/31/the-rise-of-5g-unlocking-the-potential-of-next-generation-mobile-networks/" target="_blank"><h4>The Rise of 5G: Unlocking the Potential of Next Generation Mobile Networks</h4></a>
-                            <p>With each generation of mobile networks, we see unprecedented advances that transform the way we connect and communicate. The fifth generation of mobile networks, commonly known as 5G, is no exception. 
-                                In this blog, we explore the rise of 5G technology and its potential to revolutionize the way we interact with the digital world.</p>
+                            <a href="https://thenirajblog.wordpress.com/2023/07/31/the-rise-of-5g-unlocking-the-potential-of-next-generation-mobile-networks/"
+                                target="_blank">
+                                <h4>The Rise of 5G: Unlocking the Potential of Next Generation Mobile Networks</h4>
+                            </a>
+                            <p>With each generation of mobile networks, we see unprecedented advances that transform the
+                                way we connect and communicate. The fifth generation of mobile networks, commonly known
+                                as 5G, is no exception.
+                                In this blog, we explore the rise of 5G technology and its potential to revolutionize
+                                the way we interact with the digital world.</p>
                         </div>
                     </div>
 
-                     <div class="blog">
-                        <img src="images/blog11.png" alt="">
+                    <!-- Blog Item 11 -->
+                    <div class="blog" data-aos="fade-up" data-aos-delay="1100">
+                        <img src="images/blog11.png" alt="Effective Decision Making in Business">
                         <div class="blog-text">
-                            <a href="https://www.linkedin.com/posts/niru-nny_decisionmaking-businessstrategy-leadership-activity-7133822291351642112-wb9J?utm_source=share&utm_medium=member_desktop" target="_blank"><h4>The Art of Making Effective Decisions in Business: Strategies for Success</h4></a>
-                            <p>In the dynamic and ever-evolving world of business, the ability to make sound and effective decisions is a vital skill for entrepreneurs and business leaders. Effective decision making is the cornerstone of success, enabling organizations to overcome challenges, 
-                                take advantage of opportunities, and achieve their strategic goals. In this blog post, 
-                                we shed light on the complexities of making effective decisions in business, equipping you with strategies and insights to make informed choices that drive business growth.</p>
+                            <a href="https://www.linkedin.com/posts/niru-nny_decisionmaking-businessstrategy-leadership-activity-7133822291351642112-wb9J?utm_source=share&utm_medium=member_desktop"
+                                target="_blank">
+                                <h4>The Art of Making Effective Decisions in Business: Strategies for Success</h4>
+                            </a>
+                            <p>In the dynamic and ever-evolving world of business, the ability to make sound and
+                                effective decisions is a vital skill for entrepreneurs and business leaders. Effective
+                                decision making is the cornerstone of success, enabling organizations to overcome
+                                challenges,
+                                take advantage of opportunities, and achieve their strategic goals. In this blog post,
+                                we shed light on the complexities of making effective decisions in business, equipping
+                                you with strategies and insights to make informed choices that drive business growth.
+                            </p>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
             </div>
         </section>
 
 
-
-<!-- this is contact section  -->
-
+        <!-- Contact Section -->
         <section class="section sec5" id="contact">
             <div class="contact-container">
-                <div class="main-title">
-                    <h2>contact <span>me</span><span class="bg-text">hire me</span></h2>
+                <div class="main-title" data-aos="fade-up">
+                    <h2>Contact <span>Me</span><span class="bg-text">Hire Me</span></h2>
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>contact me here</h4>
-                        <p>Feel free to reach out to me through the provided contact details or the form below. I'd love to hear from you!</p>
+                <div class="contact-content-con" data-aos="fade-up">
+                    <!-- Left Contact -->
+                    <div class="left-contact" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Contact Me Here</h3>
+                        <p>Feel free to reach out to me through the provided contact details or the form below. I'd love
+                            to hear from you!</p>
                         <div class="contact-info">
-                            <div class="contact-item">
+                            <!-- Contact Item 1 -->
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
                                 <div class="icon">
-                                    <i class="fa-solid fa-location-dot"></i>
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                                 </div>
-                                <p>: patna, bihar</p>
+                                <p>: Patna, Bihar</p>
                             </div>
-
-                            <div class="contact-item">
+                            <!-- Contact Item 2 -->
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
                                 <div class="icon">
-                                    <i class="fa-solid fa-phone-volume"></i>
+                                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
                                 </div>
                                 <p>: +91 6206825031</p>
                             </div>
-
-                            <div class="contact-item">
+                            <!-- Contact Item 3 -->
+                            <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
                                 <div class="icon">
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                 </div>
                                 <p>: kumarnitish87461@gmail.com</p>
                             </div>
                         </div>
-
-
-
-                        <!-- social mideas -->
-                        <div class="contact-icons">
+                        <!-- Social Media Icons -->
+                        <div class="contact-icons" data-aos="fade-up" data-aos-delay="500">
                             <div class="contact-icon">
-                                <a href="https://www.linkedin.com/in/niru-nny" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/niru-nny" target="_blank" rel="noopener noreferrer"
+                                    aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                                 </a>
-
-                                <a href="https://github.com/nitish-niraj" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
+                                <a href="https://github.com/nitish-niraj" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub">
+                                    <i class="fa-brands fa-github" aria-hidden="true"></i>
                                 </a>
-
-                                <a href="https://www.facebook.com/profile.php?id=100011312194742" target="_blank">
-                                    <i class="fa-brands fa-facebook"></i>
+                                <a href="https://www.facebook.com/profile.php?id=100011312194742" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                                 </a>
-
-                                <a href="https://www.instagram.com/niru.nny/" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
+                                <a href="https://www.instagram.com/niru.nny/" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
-
-                                
+                                <a href="https://x.com/niru_nny" target="_blank" rel="noopener noreferrer"
+                                    aria-label="Twitter">
+                                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                                </a>
                             </div>
-                        </div>                    
+                        </div>
                     </div>
-
-                            <!-- form  -->
-
-                    <div class="right-contact">
+                    <!-- Right Contact -->
+                    <div class="right-contact" data-aos="fade-up" data-aos-delay="600">
                         <form action="https://formspree.io/f/mjvqblkn" method="POST" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" name="email" required placeholder="Your E-mail">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                                <label for="email">Your E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="Your E-mail">
                             </div>
-
                             <div class="input-control">
-                                <textarea name="Message" id="" cols="15" rows="8" placeholder="Message here........"></textarea>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" cols="15" rows="8" placeholder="Message here..."
+                                    required></textarea>
                             </div>
-
-                            <div class="submit-btn">
+                            <div class="submit-btn" data-aos="fade-up" data-aos-delay="700">
                                 <button type="submit" class="main-btn">
                                     <span class="btn-text" style="color: green; font-size: large;">Send</span>
-                                    <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                                    <span class="btn-icon"><i class="fa-solid fa-paper-plane"
+                                            aria-hidden="true"></i></span>
                                 </button>
-                                <a href="https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view?usp=drive_link" class="main-btn" target="_blank">
+                                <a href="https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view?usp=drive_link"
+                                    class="main-btn" target="_blank" rel="noopener noreferrer">
                                     <span class="btn-text">Download Resume</span>
-                                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                                    <span class="btn-icon"><i class="fa-solid fa-download"
+                                            aria-hidden="true"></i></span>
                                 </a>
                             </div>
                         </form>
                     </div>
                 </div>
-            </div>            
+            </div>
         </section>
-
-
 
 
     </main>
 
+    <!-- Navigation Controls -->
     <div class="controlls">
-        <div class="control control-1 active-btn" data-id="home"><i class="fa-solid fa-house"></i></div>
-        <div class="control control-2 " data-id="about"><i class="fa-solid fa-user-tie"></i></div>
-        <div class="control control-3 " data-id="portfolio"><i class="fa-solid fa-briefcase"></i></div>
-        <div class="control control-4 " data-id="blogs"><i class="fa-solid fa-newspaper"></i></div>
-        <div class="control control-5 " data-id="contact"><i class="fa-solid fa-phone"></i></div>
+        <div class="control control-1 active-btn" data-id="home" title="Home"><i class="fa-solid fa-house"></i></div>
+        <div class="control control-2" data-id="about" title="About"><i class="fa-solid fa-user-tie"></i></div>
+        <div class="control control-3" data-id="portfolio" title="Portfolio"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="control control-4" data-id="blogs" title="Blogs"><i class="fa-solid fa-newspaper"></i></div>
+        <div class="control control-5" data-id="contact" title="Contact"><i class="fa-solid fa-phone"></i></div>
     </div>
 
-
-    <div class="theme-btn">
+    <!-- Theme Toggle Button -->
+    <div class="theme-btn" title="Toggle Theme">
         <i class="fa-solid fa-circle-half-stroke"></i>
     </div>
 
-
-
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
